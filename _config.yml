@@ -49,6 +49,28 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+## collection setting
+collections:
+- blog
+  output: true
+  permalink: /blog/:path
+defaults:
+  - scope:
+      path: ''
+      type: blog
+    values:
+      layout: blog
+- scrap
+  output: true
+  permalink: /scrap/:path
+defaults:
+  - scope:
+      path: ''
+      type: scrap
+    values:
+      layout: scrap
+
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
